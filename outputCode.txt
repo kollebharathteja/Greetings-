@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Try It Yourself</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script type="text/javascript">
+  function greet() {
+    const now = new Date();
+    const hour = now.getHours(); // 0 - 23
+
+    let message = "";
+
+    if (hour >= 0 && hour <= 11) {
+        message = "Good Morning lev lev time entha be";
+    } else if (hour > 11 && hour < 15) {
+        message = "Good Afternoon .... thinnava ra";
+    } else if (hour >= 15 && hour < 21) {
+        message = "Em Chestunnav ra ";
+    } else if (hour >= 21 && hour < 24) {
+        message = "Good Night raaa";
+    } else {
+        message = "Hello 😁";
+    }
+
+    console.log(message);
+    return message;
+}
+
+greet();
+document.getElementById("demo").innerHTML = greet();
+  </script>
+</body>
+</html>
